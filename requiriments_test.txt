@@ -1,0 +1,22 @@
+#cmd
+
+--file location
+pip install virtualenv
+cd venv/Scripts
+activate
+cd ..
+cd ..
+python -m pip install geopy
+python -m pip install requests
+python
+
+#python
+
+>>> import geopy.distance as gd
+>>> import requests
+>>> import json
+>>> from localizacao import buscar_distancias
+>>> buscar_distancias('<rua>, <num>', ['<rua>, <num>', '<rua>, <num>'])
+                        #from user             #from db
+>>> quit() 
+   #for reset
