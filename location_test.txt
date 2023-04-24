@@ -7,3 +7,8 @@
 >>> buscar_distancias('<rua>, <num>', ['<rua>, <num>', '<rua>, <num>'])
                         #from user                   #from db
 >>> quit() #for reset
+
+Av. Paulista, 1000
+Rua Consolação, 200
+Rua Augusta, 100
+Rua Frei Caneca, 300

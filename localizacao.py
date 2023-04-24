@@ -2,6 +2,9 @@ import geopy.distance as gd
 import requests
 import json
 
+def criterio(lista):
+    return lista[1]
+
 def buscar_distancias(endereco_usuario, enderecos_banco):
     resultados = []
     
@@ -20,7 +23,8 @@ def buscar_distancias(endereco_usuario, enderecos_banco):
         
         distancia = round(gd.distance(coordenadas_usuario, coordenadas_endereco).km, 2)
         
-        resultados.append(f'{endereco}: {distancia} km')
-    
+        resultados.append([endereco, distancia])
 
-    return resultados
+    enderecos_ordenados = (sorted(resultados, key=criterio))
+
+    return enderecos_ordenados
